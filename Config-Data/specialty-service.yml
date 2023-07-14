@@ -1,0 +1,17 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: specialty-service
+  datasource:
+    url: jdbc:mysql://smarth-db.chenbke79stf.us-east-1.rds.amazonaws.com:3306/serviceEspecialidad?useSSL=false
+    username: admin
+    password: kl1kan247
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    datasource-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate.format_sql: true
