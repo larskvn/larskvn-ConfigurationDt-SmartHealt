@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /user-service
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://smarth-db.chenbke79stf.us-east-1.rds.amazonaws.com:3306/userService?useSSL=false
+    username: admin
+    password: kl1kan247
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    datasource-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
